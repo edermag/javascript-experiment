@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type='text/javascript' src='repository.js'></script>
+  <title>JavaScript-Way - Module in JS</title>
+</head>
+<body>
+  <script type="text/javascript">
+	// list of cars
+	var cars = [
+        { plate: 'YYY-0011', type: 'Chevrolet - SUV', color: 'white' },
+        { plate: 'JJJ-1122', type: 'Ford - Sedan', color: 'black' },
+        { plate: 'HHH-1122', type: 'Volvo - SUV', color: 'red' },
+        { plate: 'YYY-4411', type: 'Chevrolet - Pickup', color: 'red' }
+    ];
+	
+	cars.forEach(function(c, i){
+	    c.toString = function() {
+		    return "Car: " + c.plate + " - " + c.type + " - " +c.color; 
+	    }
+	});
+	
+	var vehicleRepo = store(cars);
+	
+	document.write('vehicleRepo.where("plate").is("YYY-0011").get() = '+ vehicleRepo.where('plate').is('YYY-0011').get() + ' <br/>');
+	
+	document.write('<br/>');
+	document.write('vehicleRepo.where("plate").is(".*1122").get() = '+ vehicleRepo.where('plate').is('.*1122').get() + ' <br/>');
+	
+	document.write('<br/>');
+	document.write('vehicleRepo.where("plate").is(".*1122").and("color").is("red").get() = '+ vehicleRepo.where('plate').is('.*1122').and('color').is('red').get() + ' <br/>');
+	
+	document.write('<br/>');
+	document.write('get all cars:<br/>');
+	
+	vehicleRepo.get().forEach(function(car) {
+	    document.write(car + '<br/>');
+	});
+	
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type='text/javascript' src='objects.js'></script>
+  <title>JavaScript-Way - Objects in JS</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var p = 'NYC-1111';
+    var v = new Vehicle(p);
+	
+	document.write('v = '+ v +' <br/>');
+	document.write('v.plate = '+ v.plate +' <br/>');
+	document.write('v.drive() = '+ v.drive() +' <br/>');
+	document.write('typeof v = '+ typeof v +' <br/>');
+	
+	var anotherV = new Vehicle(); //undefined plate
+	anotherV.toString = function () { //overrides toString for anotherV object...
+	    return "Vehicle without plate";
+	}
+	document.write('<br/>');
+	document.write('anotherV.plate = '+ anotherV.plate +' <br/>');
+	document.write('anotherV.drive() = '+ anotherV.drive() +' <br/>');
+	document.write('anotherV.toString() = '+ anotherV.toString() +' <br/>');
+	
+	document.write('Content of Vehicle = '+ Vehicle +' <br/>');
+	
+	document.write('<br/>');
+	document.write('v.stop() = '+ v.onStop() +' <br/>');
+	
+	var t1 = Object.create(Truck);
+	t1.plate = "WHS-2222";
+	t1.size=15;
+	
+	var t2 = Object.create(Truck);
+	t2.plate = "DET-8888";
+	t2.size=22;
+	
+	document.write('<br/>');
+	document.write('t1 = '+ t1 +' <br/>');
+	document.write('t2 = '+ t2 +' <br/>');
+	
+	var bikeY = Bike.createNew('Yellow', 15);
+	var bikeR = Bike.createNew('Red', 20);
+	
+	document.write('<br/>');
+	document.write('bikeY = '+ bikeY +' <br/>');
+	document.write('bikeR = '+ bikeR +' <br/>');
+  </script>
+</body>
+</html>

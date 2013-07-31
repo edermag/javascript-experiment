@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type='text/javascript' src='module.js'></script>
+  <title>JavaScript-Way - Module in JS</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var msgToName = ConcatModule.concat("Name:");
+	
+	var name = "Mary";
+	var age = 30;
+	
+	document.write('msgToName = ConcatModule.concat("Name:"); <br/>');
+	document.write('msgToName(name) = '+ msgToName(name) +' <br/>');
+	
+	document.write('<br/>');
+	document.write('ConcatModule.concat("Age:")(age) = '+ ConcatModule.concat("Age:")(age) +' <br/>');
+	
+	document.write('<br/>');
+	document.write('ConcatModule.concat("Married:")() = '+ ConcatModule.concat("Married:")() +' <br/>');
+  </script>
+</body>
+</html>
