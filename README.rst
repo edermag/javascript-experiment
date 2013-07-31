@@ -10,4 +10,4 @@ In this project I share some JavaScript code to show how use:
 * Module definition;
 * Text manipulation (regex);
 
-`Portuguese <https://github.com/edermag/java-script-experiment/blob/master/README_pt_BR.rst>`_
+`Portuguese <https://github.com/edermag/javascript-experiment/blob/master/README_pt_BR.rst>`_

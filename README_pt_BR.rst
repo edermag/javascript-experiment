@@ -10,4 +10,4 @@ Nesse projeto eu compartilho código JavaScript demonstrando como utilizar:
 * Definição de Módulos;
 * Manipulação de texto (regex);
 
-`Inglês <https://github.com/edermag/java-script-experiment/blob/master/README.rst>`_
+`Inglês <https://github.com/edermag/javascript-experiment/blob/master/README.rst>`_
