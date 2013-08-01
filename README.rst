@@ -9,5 +9,6 @@ In this project I share some JavaScript code to show how use:
 * Inheritance;
 * Module definition;
 * Text manipulation (regex);
+* Function bind;
 
 `Portuguese <https://github.com/edermag/javascript-experiment/blob/master/README_pt_BR.rst>`_

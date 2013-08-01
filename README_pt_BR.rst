@@ -9,5 +9,6 @@ Nesse projeto eu compartilho código JavaScript demonstrando como utilizar:
 * Herança (baseada em protótipo);
 * Definição de Módulos;
 * Manipulação de texto (regex);
+* Bind de funções;
 
 `Inglês <https://github.com/edermag/javascript-experiment/blob/master/README.rst>`_

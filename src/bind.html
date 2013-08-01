@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type='text/javascript' src='bind.js'></script>
+  <title>JavaScript-Way - Using bind in JS functions</title>
+</head>
+<body>
+  <script type="text/javascript">
+    
+    <!-- name doesn't exists in window scope -->
+    document.write('out.print() = '+ out.print() +' <br/>');
+    
+    document.write('<br/>');
+    document.write('out.print.bind(people)() = '+ out.print.bind(people)() +' <br/>');
+    
+    var printPet = out.print.bind(pet);
+    document.write('printPet(pet)() = '+ printPet() +' <br/>');
+    
+  </script>
+</body>
+</html>
