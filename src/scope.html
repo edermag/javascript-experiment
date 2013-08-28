@@ -9,49 +9,50 @@
   <script type="text/javascript">
     document.write('name = '+ name +' <br/>');
     document.write('window.name = '+ window.name +' <br/>');
-	document.write('<br/>');
-	
+    document.write('<br/>');
+    
     var p = new Person();
-	document.write('p.name = '+ p.name +' <br/>');
-	document.write('p.firstChild = '+ p.firstChild +' <br/>');
-	
-	document.write('<br/>');
-	document.write('again p.name = '+ p.name +' <br/>');
-	document.write('again window.name = '+ window.name +' <br/>'); //ops!
-	
-	document.write('<br/>');
-	document.write('p.secondChild = '+ p.secondChild +' <br/>');
-	document.write('<br/>');
-	document.write('getName() = '+ getName() +' <br/>');
-	document.write('<br/>');
-	document.write('again p.name = '+ p.name +' <br/>');
-	document.write('again window.name = '+ window.name +' <br/>');
-	
-	document.write('<br/>');
-	document.write('_t = '+ _t +' <br/>');
-	document.write('<br/>');
-	document.write('getThis() = '+ getThis() +' <br/>');
-	
-	document.write('<br/>');
-	document.write('getName.call(p) = '+ getName.call(p) +' <br/>');
-	
-	document.write('<br/>');
-	document.write('multiply.call(number, 2) = '+ multiply.call(number, 2) +' <br/>');
-	document.write('multiply.apply(number, [3]) = '+ multiply.apply(number, [3]) +' <br/>');
-	document.write('multiply.call() = '+ multiply.call() +' <br/>');
-	
-	var cat = Animal.createNew();
-	cat.name="Kido";
-	cat.changeType("Cat");
-	
-	var dog = Animal.createNew();
-	dog.name="Zeca";
-	dog.changeType("Dog"); //same type for 2 animals
-	
-	document.write('<br/>');
-	document.write('cat = '+ cat +' <br/>');
-	document.write('dog = '+ dog +' <br/>');
-	
+    document.write('p.name = '+ p.name +' <br/>');
+    document.write('p.firstChild = '+ p.firstChild +' <br/>');
+    
+    document.write('<br/>');
+    document.write('again p.name = '+ p.name +' <br/>');
+    document.write('again window.name = '+ window.name +' <br/>'); //ops!
+    
+    document.write('<br/>');
+    document.write('p.secondChild = '+ p.secondChild +' <br/>');
+    document.write('<br/>');
+    document.write('getName() = '+ getName() +' <br/>');
+    document.write('<br/>');
+    document.write('again p.name = '+ p.name +' <br/>');
+    document.write('again window.name = '+ window.name +' <br/>');
+    
+    document.write('<br/>');
+    document.write('_t = '+ _t +' <br/>');
+    document.write('<br/>');
+    document.write('getThis() = '+ getThis() +' <br/>');
+    
+    document.write('<br/>');
+    document.write('getName.call(p) = '+ getName.call(p) +' <br/>');
+    
+    document.write('<br/>');
+    document.write('multiply.call(number, 2) = '+ multiply.call(number, 2) +' <br/>');
+    document.write('multiply.apply(number, [3]) = '+ multiply.apply(number, [3]) +' <br/>');
+    document.write('multiply.call() = '+ multiply.call() +' <br/>');
+    
+    var cat = Animal.createNew();
+    cat.name="Kido";
+    cat.changeType("Cat");
+    
+    var dog = Animal.createNew();
+    dog.name="Zeca";
+    dog.changeType("Dog"); //same type for 2 animals
+    
+    document.write('<br/>');
+    document.write('cat = '+ cat +' <br/>');
+    document.write('dog = '+ dog +' <br/>');
+    
   </script>
+  <p><br/>See this snippet of code on <a href="http://jsfiddle.net/edermag/A4mRn/" title="JSFiddle edermag">JSFiddle</a></p>
 </body>
 </html>
